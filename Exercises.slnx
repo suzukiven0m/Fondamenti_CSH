@@ -1,0 +1,15 @@
+<Solution>
+  <Project Path="1ton/1ton.csproj" />
+  <Project Path="Bank_System/Bank_System.csproj" />
+  <Project Path="ConsoleApp1/ConsoleApp1.csproj" />
+  <Project Path="Converter/Converter.csproj" />
+  <Project Path="Discount/Discount.csproj" />
+  <Project Path="IMC/IMC.csproj" />
+  <Project Path="Number_Descomposition/Number_Descomposition.csproj" />
+  <Project Path="Presentazione_Personale/Presentazione_Personale.csproj" />
+  <Project Path="Prime_Number/Prime_Number.csproj" />
+  <Project Path="Rectangle/Rectangle.csproj" />
+  <Project Path="Table/Table.csproj" />
+  <Project Path="Temperature/Temperature.csproj" />
+  <Project Path="Temperature_While/Temperature_While.csproj" />
+</Solution>
