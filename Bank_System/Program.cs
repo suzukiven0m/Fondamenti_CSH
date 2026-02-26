@@ -4,13 +4,6 @@ using static System.Net.WebRequestMethods;
 namespace Bank_System
 {
     internal class Program
-    //        Simula un conto bancario semplice.Il programma deve: 1. Chiedere il nome del titolare e il
-    //saldo iniziale 2. Chiedere un importo da depositare 3. Chiedere un importo da prelevare 4.
-    //Controllare che il prelievo non superi il saldo disponibile(usa bool salienteOk) 5. Stampare
-    //un riepilogo finale con: nome titolare, saldo iniziale, deposito effettuato, prelievo effettuato
-    //(o rifiutato), saldo finale.FORMATO OUTPUT: ogni valore monetario deve essere
-    //visualizzato con 2 decimali e il simbolo €.
-
 
 
 

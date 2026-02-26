@@ -2,8 +2,7 @@
 {
     internal class Program
     {
-        //        Dichiara due variabili double: base e altezza.Assegna dei valori a tua scelta.Calcola l'area
-        //(base × altezza) e il perimetro(2 × (base + altezza)). Stampa i risultati con 2 cifre decimali.
+       
         static void Main(string[] args)
         {
             AreaRectangle();

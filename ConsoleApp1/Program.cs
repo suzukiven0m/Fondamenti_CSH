@@ -8,10 +8,7 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            //Calls the greeting function, like in python 
-            //Greeting();   
-            //TellAge();
-            //Print();
+           
             GuessNumber();
 
         }
@@ -20,7 +17,7 @@ namespace ConsoleApp1
         {
             int guess = 10;
             int number;
-            int tries = 0;  //Counter Variable
+            int tries = 0; 
 
             Console.WriteLine("Insert a number from 1 to 98, 99 to quit: ");
             number = int.Parse(Console.ReadLine());
@@ -74,7 +71,7 @@ namespace ConsoleApp1
                 {
                     if (i % 2 == 0)
                     {
-                        //Console.WriteLine(i);
+                        
                         Console.Write($"{i}\t");
                     }
 
@@ -118,7 +115,7 @@ namespace ConsoleApp1
 
                 static void Greeting()
                 {
-                    //Input name and surname and Greets you personally
+                   
                     Console.WriteLine("Insert your name: ");
                     string name = Console.ReadLine();
                     Console.WriteLine("Insert your surname: ");

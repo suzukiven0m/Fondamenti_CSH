@@ -3,11 +3,7 @@
     internal class Program
     {
 
-        //        Crea un convertitore che chieda all'utente: 1. Il tipo di conversione (digitare un numero): 1)
-        //Km → Miglia, 2) Kg → Libbre, 3) Litri → Galloni 2. Il valore da convertire Ogni conversione
-        //deve essere gestita correttamente.Fattori: 1 km = 0.621371 miglia; 1 kg = 2.20462 libbre; 1
-        //litro = 0.264172 galloni.STAMPA: il risultato con 4 cifre decimali e le unità di misura
-        //originali e convertite.BONUS: aggiungi anche la conversione inversa per ogni tipo.
+       
         static void Main(string[] args)
         {
             Console.WriteLine("What type of converter do you want:");

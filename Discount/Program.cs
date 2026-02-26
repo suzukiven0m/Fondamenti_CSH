@@ -2,9 +2,7 @@
 {
     internal class Program
     {
-        //// Chiedi all'utente il prezzo unitario di un prodotto e la quantità desiderata. Calcola il totale,
-        //poi applica uno sconto del 10% se il totale supera 50 euro.Stampa il totale scontato.
-        //BONUS: usa anche bool haSconto per indicare se lo sconto è stato applicato.
+       
         static void Main(string[] args)
         {
 
