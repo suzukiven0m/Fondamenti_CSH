@@ -10,6 +10,7 @@ namespace Bank_System
     {
         static void Main(string[] args)
         {
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
             Console.WriteLine("Welcome back... Please insert your name: ");
             string name = Console.ReadLine();
             Console.WriteLine($"Hello {name}, how much is your balance? ");
@@ -18,16 +19,17 @@ namespace Bank_System
             int deposit = int.Parse(Console.ReadLine());
             Console.WriteLine("How much money will you withdraw today?");
             int withdraw = int.Parse(Console.ReadLine());
-            int new_balance = balance + deposit;
-            bool withdrawOK = (balance + deposit) > withdraw;
-            var BalanceDecimal = new_balance.ToString("F2");
-            var WithdrawDecimal = withdraw.ToString("F2");
-            var DepositDecimal = deposit.ToString("F2");
+            int newBalance = balance + deposit;
+            bool withdrawOk = (balance + deposit) >= withdraw;
+            var balanceDecimal = newBalance.ToString("F2");
+            var withdrawDecimal = withdraw.ToString("F2");
+            var depositDecimal = deposit.ToString("F2");
             int finalbalance = (balance + deposit) - withdraw;
             var finalDecimal = finalbalance.ToString("F2");
-            if (withdrawOK)
+            if (withdrawOk)
             {
-                Console.WriteLine($"{name}, your balance is € {BalanceDecimal}, you just deposited € {DepositDecimal}, and € withdrawn {WithdrawDecimal}, your remaining balance is {finalDecimal}");
+                Console.Clear();
+                Console.WriteLine($"{name}, your balance is € {balanceDecimal}.\n You just deposited € {depositDecimal}.\n Withdrawn € {withdrawDecimal}.\n Your remaining balance is € {finalDecimal} \n");
             }
             else
             {

@@ -15,6 +15,7 @@
             Console.WriteLine($"Hundreds: {hundreds}");
             Console.WriteLine($"Tens: {tens}");
             Console.WriteLine($"Units: {units}");
+            
         }
     }
 }

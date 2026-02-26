@@ -1,50 +1,71 @@
-﻿namespace Converter
+﻿using System;
+
+namespace Converter
 {
     internal class Program
     {
-
-       
         static void Main(string[] args)
         {
-            Console.WriteLine("What type of converter do you want:");
-            Console.WriteLine("1. Kilometre to Mile");
-            Console.WriteLine("2. Kilogram to Pound");
-            Console.WriteLine("3. Litre to Gallon");
-
-            int selection = int.Parse(Console.ReadLine());
-
-            switch (selection)
+            while (true)
             {
-                case 1:
-                    Console.Clear();
-                    Console.WriteLine("Insert amount of Kms to be converted to miles: ");
-                    double kmConvert = double.Parse(Console.ReadLine());
-                    double milesConvert = kmConvert * 0.621371;
-                    Console.Clear();
-                    Console.WriteLine($"{kmConvert} Kilometres = {milesConvert.ToString("0.###")} Miles");
-                    break;
+                Console.Clear();
+                Console.WriteLine(@"
+=================================================================================================================================
+      ___           ___           ___           ___           ___           ___           ___           ___           ___     
+     /\  \         /\  \         /\__\         /\__\         /\  \         /\  \         /\  \         /\  \         /\  \    
+    /::\  \       /::\  \       /::|  |       /:/  /        /::\  \       /::\  \        \:\  \       /::\  \       /::\  \   
+   /:/\:\  \     /:/\:\  \     /:|:|  |      /:/  /        /:/\:\  \     /:/\:\  \        \:\  \     /:/\:\  \     /:/\:\  \  
+  /:/  \:\  \   /:/  \:\  \   /:/|:|  |__   /:/__/  ___   /::\~\:\  \   /::\~\:\  \       /::\  \   /::\~\:\  \   /::\~\:\  \ 
+ /:/__/ \:\__\ /:/__/ \:\__\ /:/ |:| /\__\  |:|  | /\__\ /:/\:\ \:\__\ /:/\:\ \:\__\     /:/\:\__\ /:/\:\ \:\__\ /:/\:\ \:\__\
+ \:\  \  \/__/ \:\  \ /:/  / \/__|:|/:/  /  |:|  |/:/  / \:\~\:\ \/__/ \/_|::\/:/  /    /:/  \/__/ \:\~\:\ \/__/ \/_|::\/:/  /
+  \:\  \        \:\  /:/  /      |:/:/  /   |:|__/:/  /   \:\ \:\__\      |:|::/  /    /:/  /       \:\ \:\__\      |:|::/  / 
+   \:\  \        \:\/:/  /       |::/  /     \::::/__/     \:\ \/__/      |:|\/__/     \/__/         \:\ \/__/      |:|\/__/  
+    \:\__\        \::/  /        /:/  /       ~~~~          \:\__\        |:|  |                      \:\__\        |:|  |    
+     \/__/         \/__/         \/__/                       \/__/         \|__|                       \/__/         \|__|    
+==================================================================================================================================
+            Welcome to my C# Program, choose a conversion:
+            1. Kilometre to Mile
+            2. Kilogram to Pound
+            3. Litre to Gallon
+            4. Exit
+        ");
+                
 
-                case 2:
-                    Console.Clear();
-                    Console.WriteLine("Insert Kgs to be converted to pounds: ");
-                    double kgsConvert = double.Parse(Console.ReadLine());
-                    double poundsConvert = kgsConvert * 2.20462;
-                    Console.Clear();
-                    Console.WriteLine($"{kgsConvert} Kilograms = {poundsConvert.ToString("0.###")} Pounds");
-                    break;
+                int selection = int.Parse(Console.ReadLine());
 
-                case 3:
-                    Console.Clear();
-                    Console.WriteLine("Litres to be converted to Gallons: ");
-                    double litreConvert = double.Parse(Console.ReadLine());
-                    double gallonConvert = litreConvert * 0.264172;
-                    Console.Clear();
-                    Console.WriteLine($"{litreConvert} Litres = {gallonConvert.ToString("0.###")} Gallons");
-                    break;
+                switch (selection)
+                {
+                    case 1:
+                        Console.Clear();
+                        Console.Write("Insert amount of Kms: ");
+                        double km = double.Parse(Console.ReadLine());
+                        Console.WriteLine($"{km} Kilometres = {(km * 0.621371):0.###} Miles");
+                        break;
 
-                default:
-                    Console.WriteLine("Invalid selection.");
-                    break;
+                    case 2:
+                        Console.Clear();
+                        Console.Write("Insert Kgs: ");
+                        double kg = double.Parse(Console.ReadLine());
+                        Console.WriteLine($"{kg} Kilograms = {(kg * 2.20462):0.###} Pounds");
+                        break;
+
+                    case 3:
+                        Console.Clear();
+                        Console.Write("Insert Litres: ");
+                        double litre = double.Parse(Console.ReadLine());
+                        Console.WriteLine($"{litre} Litres = {(litre * 0.264172):0.###} Gallons");
+                        break;
+
+                    case 4:
+                        return;
+                    
+                    default:
+                        Console.WriteLine("Invalid selection.");
+                        break;
+                }
+
+                Console.WriteLine("\nPress any key to return to menu...");
+                Console.ReadKey();
             }
         }
     }
