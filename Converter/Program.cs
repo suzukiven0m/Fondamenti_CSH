@@ -64,7 +64,7 @@ namespace Converter
                         break;
                 }
 
-                Console.WriteLine("\nPress any key to return to menu...");
+                Console.WriteLine("Press any key to return to menu...");
                 Console.ReadKey();
             }
         }
