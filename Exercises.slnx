@@ -4,6 +4,7 @@
   <Project Path="ConsoleApp1/ConsoleApp1.csproj" />
   <Project Path="Converter/Converter.csproj" />
   <Project Path="Discount/Discount.csproj" />
+  <Project Path="guessNumber/guessNumber.csproj" />
   <Project Path="IMC/IMC.csproj" />
   <Project Path="Number_Descomposition/Number_Descomposition.csproj" />
   <Project Path="Presentazione_Personale/Presentazione_Personale.csproj" />

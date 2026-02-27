@@ -6,33 +6,20 @@ namespace Prime_Number
     {
         static void Main(string[] args)
         {
-            
-            Console.WriteLine("Please insert a positive integer: ");
-            int N = int.Parse(Console.ReadLine());
+            Console.WriteLine("Please input a positive number: ");
+            int number = Convert.ToInt32(Console.ReadLine());
 
-            if (N <= 0)
-            {
-                Console.WriteLine("Number must be positive.");
-                return;
-            }
+            Console.WriteLine("Prime numbers up to " + number + ":");
 
-            
-            bool isNPrime = IsPrime(N);
-            Console.WriteLine(isNPrime ? $"{N} is prime." : $"{N} is not prime.");
-            
-            Console.WriteLine($"\nPrime numbers up to {N}:");
-            int primeCount = 0;
-            for (int num = 2; num <= N; num++)
+            for (int i = 2; i <= number; i++)
             {
-                if (IsPrime(num))
+                if (IsPrime(i))
                 {
-                    Console.WriteLine(num);
-                    primeCount++;
+                    Console.Write(i + " ");
                 }
             }
-            Console.WriteLine($"\nTotal prime numbers up to {N}: {primeCount}");
         }
-        
+
         static bool IsPrime(int number)
         {
             if (number <= 1)
@@ -43,6 +30,7 @@ namespace Prime_Number
                 if (number % i == 0)
                     return false;
             }
+
             return true;
         }
     }

@@ -1,8 +1,5 @@
 ﻿namespace Table;
-// Chiedi all'utente un numero intero da 1 a 10.
-// Stampa tutta la tabellina di quel numero, da 1 a 10.
-// Esempio: se l'utente inserisce 6, stampa:  6 x 1 = 6  6 x 2 = 12  ... fino a  6 x 10 = 60
-// Se il numero non è tra 1 e 10, mostra un messaggio di errore.
+
 class Program
 {
     static void Main(string[] args)

@@ -8,16 +8,17 @@ namespace _1ton
         {
             Console.Write("Please insert any positive number: ");
             int input = int.Parse(Console.ReadLine());
-            int somma = 0;
+            int sum = 0;
 
             for (int i = 1; i <= input; i++)
             {
-                somma += i;
-                string tipo = (i % 2 == 0) ? "even" : "odd";
-                Console.WriteLine($"{i} - {tipo}");
+                var type = (i % 2 == 0) ? "even" : "odd";
+                sum = sum + i;
+                Console.WriteLine($"{i} is {type}");
+
             }
 
-            Console.WriteLine($"Total sum: {somma}");
+            Console.WriteLine($"Sum is {sum}");
         }
     }
 }
