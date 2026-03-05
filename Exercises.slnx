@@ -7,6 +7,7 @@
   <Project Path="Fibonacci/Fibonacci.csproj" />
   <Project Path="guessNumber/guessNumber.csproj" />
   <Project Path="IMC/IMC.csproj" />
+  <Project Path="mathCalculator/mathCalculator.csproj" />
   <Project Path="Number_Descomposition/Number_Descomposition.csproj" />
   <Project Path="Presentazione_Personale/Presentazione_Personale.csproj" />
   <Project Path="Prime_Number/Prime_Number.csproj" />

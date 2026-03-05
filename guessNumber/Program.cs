@@ -16,8 +16,8 @@ namespace guessNumber
         You have to guess the number!
         Ps. You only have seven tries!
 ");
-
-            int number = 69;       
+            Random random = new Random();
+            int number = random.Next(0, 100);
             int maxTries = 7;
             int tries = 0;
 

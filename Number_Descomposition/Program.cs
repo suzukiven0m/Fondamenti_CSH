@@ -1,4 +1,4 @@
-﻿namespace Number_Descomposition
+﻿namespace Number_Decomposition
 {
     internal class Program
     {
