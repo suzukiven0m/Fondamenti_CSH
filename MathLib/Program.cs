@@ -109,7 +109,7 @@ namespace MathLib
             Console.WriteLine();
         }
 
-        // Calculate power with positive or negative exponent
+        
         static double Power(double baseNum, int exp)
         {
             if (exp == 0) return 1;
@@ -118,7 +118,7 @@ namespace MathLib
             if (exp < 0)
             {
                 negative = true;
-                exp = -exp; // Make positive
+                exp = -exp; 
             }
             
             double result = 1;
@@ -132,12 +132,12 @@ namespace MathLib
             return result;
         }
 
-        // Calculate square root using Newton-Raphson method
+       
         static double SquareRoot(double n)
         {
             if (n == 0) return 0;
             
-            double x = n / 2; // Initial guess
+            double x = n / 2; 
             double diff;
             
             do
