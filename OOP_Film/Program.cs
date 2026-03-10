@@ -12,6 +12,7 @@ class Program
         Director director = new Director();
         director.Name = "Alejandro";
         director.Surname = "Innaritu";
+        director.Country = "Mexico";
         director.YearBorn = 1963;
         
         Film film = new Film();

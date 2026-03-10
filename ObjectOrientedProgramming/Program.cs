@@ -15,6 +15,11 @@ class Program
 
         
         
+        Student student1 = new Student();
+        AskInfoStudent(student1);
+        Console.WriteLine(student1.Info());
+        
+        
         // declare a variable student type
         Student facundo;
         // assign a value 
@@ -33,8 +38,23 @@ class Program
         
         Console.WriteLine(simone.Info());
 
-        int TotalAge = facundo.Age() + simone.Age();
+        int TotalAge = facundo.Age() + simone.Age() + student1.Age();
         Console.WriteLine(TotalAge);
+        
+        
+
+    }
+    public static void AskInfoStudent(Student student)
+    {
+           
+        Console.WriteLine("Insert the name of the student: ");
+        student.Name = Console.ReadLine();
+        Console.WriteLine("Insert the surname of the student: ");
+        student.Surname = Console.ReadLine();
+        Console.WriteLine("When was the student born? ");
+        student.YearBorn = int.Parse(Console.ReadLine());
+        
+        
 
     }
 }
