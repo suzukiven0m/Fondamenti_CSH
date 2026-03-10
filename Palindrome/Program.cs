@@ -11,12 +11,12 @@ class Program
         Console.WriteLine(IsPalindromo(array)); 
     }
 
-    static void InvertiArray(int[] array)  // ← removed "int"
+    static void InvertiArray(int[] array) 
     {
         Array.Reverse(array);
     }
 
-    static void StampaArray(int[] array)   // ← removed "int"
+    static void StampaArray(int[] array)  
     {
         string result = string.Join(" ", array);
         Console.WriteLine(result);
