@@ -2,14 +2,15 @@
 
 internal class Location
 {
-    public string Name;
+    public string Name { get; set; }
 
 
-    public string Info()
+    public string Info => $"It was filmed specifically in {Name}";
+
+    public Location(string name)
     {
-        return $"The location where the movie was filmed is {Name}";
+        this.Name = name;
     }
-    
     
     
 }

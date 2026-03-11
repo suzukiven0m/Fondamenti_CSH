@@ -16,6 +16,7 @@
   <Project Path="Number_Descomposition/Number_Descomposition.csproj" />
   <Project Path="ObjectOrientedProgramming/ObjectOrientedProgramming.csproj" />
   <Project Path="OOP_Film/OOP_Film.csproj" />
+  <Project Path="OOP_Rectangle/OOP_Rectangle.csproj" />
   <Project Path="Palindrome/Palindrome.csproj" />
   <Project Path="Presentazione_Personale/Presentazione_Personale.csproj" />
   <Project Path="Prime_Number/Prime_Number.csproj" />

@@ -2,14 +2,14 @@
 
 internal class Nation
 {
-    public string Name;
+    public string Name { get; set; } = "";
     
 
-public string Info()
-{
-    return $"The country where the film was made is {Name}";
-    
-}
+    public string Info => $"It was made in the country of {Name}";
 
-
+    public Nation(string name)
+    {
+        this.Name = name;
+    }
+    public Nation(){}
 }

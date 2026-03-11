@@ -2,15 +2,17 @@
 
 internal class Film
 {
-    public string Title;
-    public int Year;
+    public string Title { get; set; } = "";
+    public int Year { get; set; }
 
-    public string Info()
-    {
-        return $"The movie {Title} was filmed in the {Year}";
-    }
+    public string Info => $"The film  is called {Title}. It was made in {Year}.";
 
-
+    // public Film(string title, int year)
+    // {
+        // this.Title = title;
+        // this.Year = year;
+    // }
+    public Film(){ }
 
 
 }

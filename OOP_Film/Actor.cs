@@ -1,13 +1,16 @@
-﻿namespace OOP_Film;
+namespace OOP_Film;
 
 internal class Actor
 {
-    public string Name;
-    public string Surname;
+    public string Name { get; set; }
+    public string Surname { get; set; }
+    public string CityBorn { get; set; } 
+    public int YearBorn { get; set; }
 
-    public string Info()
-    {
-        return $"The principal character was reprised by: {Name}, {Surname}";
-    }
+    public bool IsAlive => YearBorn >= 1900;
 
+    public string Info => $"The actor is called {Name}, {Surname}. He was born in {CityBorn} {(IsAlive ? "and is alive" : "he passed away.")}";
+
+    
+    public Actor(){}
 }
