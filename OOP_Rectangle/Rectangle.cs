@@ -25,6 +25,8 @@ public class Rectangle
         {
             if (value <= 0)
                 throw new ArgumentException("Width must be greater than zero"); 
+            
+            asdasd
         }
     }
 
