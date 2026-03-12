@@ -19,7 +19,9 @@ class Program
         
         
         Console.WriteLine($"Enrolled students: {numeri.Count}");
-        foreach (string s in student)
-        
+        foreach (string s in colori)
+        {
+            Console.WriteLine(s);
+        }
     }
 }

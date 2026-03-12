@@ -22,7 +22,7 @@ class Program
             Console.WriteLine("5. How many contacts? (Conta)");
             Console.WriteLine("0. Exit");
             Console.Write("Choice: ");
-            
+            choice = int.Parse(Console.ReadLine());
             
             switch (choice)
             {

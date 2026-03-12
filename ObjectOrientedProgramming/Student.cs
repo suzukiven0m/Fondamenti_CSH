@@ -16,7 +16,7 @@ internal class Student
     public int Age => DateTime.Now.Year - YearBorn;
 
 
-    public void Student(string name, string surname, int YearBorn)
+    public Student(string name, string surname, int yearBorn)
     {
         this.Name = name;
         this.Surname = surname;

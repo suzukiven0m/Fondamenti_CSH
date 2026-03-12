@@ -24,10 +24,23 @@ public class Rectangle
         set
         {
             if (value <= 0)
-                throw new ArgumentException("Width must be greater than zero"); 
-            
-            asdasdhhhaa
+                throw new ArgumentException("Width must be greater than zero");
+            _width = value;
         }
     }
 
+    public Rectangle(double height, double width)
+    {
+        Width = width;
+        Height = height;
+    }
+
+    public double GetArea() => Width * Height;
+
+    public double GetPerimeter() => 2 * (Width + Height);
+
+    public bool IsSquare() => Width == Height;
+    
+    public override string ToString() => $"Rectangle({Width} x {Height}) - Area: {GetArea()}, Perimeter: {GetPerimeter()}," +
+                                         $" And it is {(IsSquare() ? "a square" : "a rectangle")}";
 }
