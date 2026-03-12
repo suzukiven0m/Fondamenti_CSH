@@ -42,5 +42,5 @@ public class Rectangle
     public bool IsSquare() => Width == Height;
     
     public override string ToString() => $"Rectangle({Width} x {Height}) - Area: {GetArea()}, Perimeter: {GetPerimeter()}," +
-                                         $" And it is {(IsSquare() ? "a square" : "a rectangle")}";
+                                         $" And it is {(IsSquare() ? "a square" : "a rectangle!")}";
 }
