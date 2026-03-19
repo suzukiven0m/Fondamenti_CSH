@@ -86,7 +86,7 @@ class Program
         }
         else
         {
-            Console.WriteLine("Contact not found (non trovato)");
+            Console.WriteLine("Contact not found");
         }
     }
 
@@ -105,7 +105,7 @@ class Program
         }
         else
         {
-            Console.WriteLine("Contact not found (non trovato)");
+            Console.WriteLine("Contact not found ");
         }
     }
 
