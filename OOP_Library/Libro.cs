@@ -3,64 +3,64 @@ namespace OOP_Library;
 internal class Libro
 {
     // Campi privati
-    private string titolo;
-    private string autore;
-    private string isbn;
-    private int annoPubblicazione;
-    private bool disponibile;
+    private string _titolo;
+    private string _autore;
+    private string _isbn;
+    private int _annoPubblicazione;
+    private bool _disponibile;
 
     // Proprietà
     public string Titolo
     {
-        get => titolo;
-        set => titolo = value;
+        get => _titolo;
+        set => _titolo = value;
     }
 
     public string Autore
     {
-        get => autore;
-        set => autore = value;
+        get => _autore;
+        set => _autore = value;
     }
 
     public string Isbn
     {
-        get => isbn;
-        set => isbn = value;
+        get => _isbn;
+        set => _isbn = value;
     }
 
     public int AnnoPubblicazione
     {
-        get => annoPubblicazione;
-        set => annoPubblicazione = value;
+        get => _annoPubblicazione;
+        set => _annoPubblicazione = value;
     }
 
     public bool Disponibile
     {
-        get => disponibile;
+        get => _disponibile;
     }
 
     // Costruttore
     public Libro(string titolo, string autore, string isbn, int annoPubblicazione)
     {
-        this.titolo = titolo;
-        this.autore = autore;
-        this.isbn = isbn;
-        this.annoPubblicazione = annoPubblicazione;
-        this.disponibile = true; // Di default il libro è disponibile
+        this._titolo = titolo;
+        this._autore = autore;
+        this._isbn = isbn;
+        this._annoPubblicazione = annoPubblicazione;
+        this._disponibile = true; // Di default il libro è disponibile
     }
 
     // Metodo Presta
     public bool Presta()
     {
-        if (disponibile)
+        if (_disponibile)
         {
-            disponibile = false;
-            Console.WriteLine($"Il libro '{titolo}' è stato prestato.");
+            _disponibile = false;
+            Console.WriteLine($"Il libro '{_titolo}' è stato prestato.");
             return true;
         }
         else
         {
-            Console.WriteLine($"Il libro '{titolo}' non è disponibile (già prestato).");
+            Console.WriteLine($"Il libro '{_titolo}' non è disponibile (già prestato).");
             return false;
         }
     }
@@ -68,15 +68,15 @@ internal class Libro
     // Metodo Restituisci
     public bool Restituisci()
     {
-        if (!disponibile)
+        if (!_disponibile)
         {
-            disponibile = true;
-            Console.WriteLine($"Il libro '{titolo}' è stato restituito.");
+            _disponibile = true;
+            Console.WriteLine($"Il libro '{_titolo}' è stato restituito.");
             return true;
         }
         else
         {
-            Console.WriteLine($"Il libro '{titolo}' era già disponibile.");
+            Console.WriteLine($"Il libro '{_titolo}' era già disponibile.");
             return false;
         }
     }
@@ -84,7 +84,7 @@ internal class Libro
     // Override ToString
     public override string ToString()
     {
-        string stato = disponibile ? "DISPONIBILE" : "PRESTATO";
-        return $"[{isbn}] {titolo} - {autore} ({annoPubblicazione}) [{stato}]";
+        string stato = _disponibile ? "DISPONIBILE" : "PRESTATO";
+        return $"[{_isbn}] {_titolo} - {_autore} ({_annoPubblicazione}) [{stato}]";
     }
 }

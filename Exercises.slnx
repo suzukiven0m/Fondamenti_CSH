@@ -16,10 +16,12 @@
   <Project Path="Number_Descomposition/Number_Descomposition.csproj" />
   <Project Path="ObjectOrientedProgramming/ObjectOrientedProgramming.csproj" />
   <Project Path="OOP_Banca/OOP_Banca.csproj" />
+  <Project Path="OOP_Bravi/OOP_Bravi.csproj" />
   <Project Path="OOP_Film/OOP_Film.csproj" />
   <Project Path="OOP_Library/OOP_Library.csproj" />
   <Project Path="OOP_Rectangle/OOP_Rectangle.csproj" />
   <Project Path="OOP_RPG/OOP_RPG.csproj" />
+  <Project Path="OOP_Trattoria/OOP_Trattoria.csproj" />
   <Project Path="OOP_Universita/OOP_Universita.csproj" />
   <Project Path="Palindrome/Palindrome.csproj" />
   <Project Path="Presentazione_Personale/Presentazione_Personale.csproj" />

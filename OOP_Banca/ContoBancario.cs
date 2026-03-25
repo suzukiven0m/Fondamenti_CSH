@@ -3,31 +3,31 @@ namespace OOP_Banca;
 internal class ContoBancario
 {
    
-    private string intestatario;
-    private double saldo;
-    private string numeroConto;
+    private string _intestatario;
+    private double _saldo;
+    private string _numeroConto;
 
    
     public string Intestatario
     {
-        get => intestatario;
-        set => intestatario = value;
+        get => _intestatario;
+        set => _intestatario = value;
     }
 
-    public double Saldo => saldo;
+    public double Saldo => _saldo;
 
     public string NumeroConto
     {
-        get => numeroConto;
-        set => numeroConto = value;
+        get => _numeroConto;
+        set => _numeroConto = value;
     }
 
    
     public ContoBancario(string intestatario, double saldoIniziale)
     {
-        this.intestatario = intestatario;
-        this.saldo = saldoIniziale >= 0 ? saldoIniziale : 0;
-        this.numeroConto = GeneraNumeroConto();
+        this._intestatario = intestatario;
+        this._saldo = saldoIniziale >= 0 ? saldoIniziale : 0;
+        this._numeroConto = GeneraNumeroConto();
     }
 
     
@@ -42,8 +42,8 @@ internal class ContoBancario
     {
         if (importo > 0)
         {
-            saldo += importo;
-            Console.WriteLine($"Deposito di {importo:F2} euro effettuato. Nuovo saldo: {saldo:F2} euro");
+            _saldo += importo;
+            Console.WriteLine($"Deposito di {importo:F2} euro effettuato. Nuovo saldo: {_saldo:F2} euro");
         }
         else
         {
@@ -54,10 +54,10 @@ internal class ContoBancario
     
     public bool Preleva(double importo)
     {
-        if (importo > 0 && saldo >= importo)
+        if (importo > 0 && _saldo >= importo)
         {
-            saldo -= importo;
-            Console.WriteLine($"Prelievo di {importo:F2} euro effettuato. Nuovo saldo: {saldo:F2} euro");
+            _saldo -= importo;
+            Console.WriteLine($"Prelievo di {importo:F2} euro effettuato. Nuovo saldo: {_saldo:F2} euro");
             return true;
         }
         else if (importo <= 0)
@@ -87,19 +87,19 @@ internal class ContoBancario
             return false;
         }
 
-        if (saldo < importo)
+        if (_saldo < importo)
         {
             Console.WriteLine("Saldo insufficiente per il trasferimento.");
             return false;
         }
 
         
-        saldo -= importo;
-        destinatario.saldo += importo;
+        _saldo -= importo;
+        destinatario._saldo += importo;
 
-        Console.WriteLine($"Trasferimento di {importo:F2} euro da {intestatario} a {destinatario.intestatario} effettuato.");
-        Console.WriteLine($"  Nuovo saldo {intestatario}: {saldo:F2} euro");
-        Console.WriteLine($"  Nuovo saldo {destinatario.intestatario}: {destinatario.saldo:F2} euro");
+        Console.WriteLine($"Trasferimento di {importo:F2} euro da {_intestatario} a {destinatario._intestatario} effettuato.");
+        Console.WriteLine($"  Nuovo saldo {_intestatario}: {_saldo:F2} euro");
+        Console.WriteLine($"  Nuovo saldo {destinatario._intestatario}: {destinatario._saldo:F2} euro");
 
         return true;
     }
@@ -107,6 +107,6 @@ internal class ContoBancario
     
     public override string ToString()
     {
-        return $"Conto [{numeroConto}] - {intestatario}: {saldo:F2} euro";
+        return $"Conto [{_numeroConto}] - {_intestatario}: {_saldo:F2} euro";
     }
 }
