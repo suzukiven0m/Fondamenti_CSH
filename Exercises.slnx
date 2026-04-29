@@ -17,6 +17,7 @@
   <Project Path="ObjectOrientedProgramming/ObjectOrientedProgramming.csproj" />
   <Project Path="OOP_Banca/OOP_Banca.csproj" />
   <Project Path="OOP_Bravi/OOP_Bravi.csproj" />
+  <Project Path="OOP_Ereditarieta/OOP_Ereditarieta.csproj" />
   <Project Path="OOP_Film/OOP_Film.csproj" />
   <Project Path="OOP_Library/OOP_Library.csproj" />
   <Project Path="OOP_Rectangle/OOP_Rectangle.csproj" />
